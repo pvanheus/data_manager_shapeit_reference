@@ -1,0 +1,9 @@
+categories: [Data Managers]
+description: Add path for SHAPEIT reference data to shapeit_ref table
+long_description: |
+  This data manager updates the `shapeit_ref` table with information about locally-maintained reference data
+  used by the SHAPEIT_ haplotype estimation
+remote_repository_url: https://github.com/pvanheus/data_manager_shapeit_reference
+type: unrestricted
+name: data_manager_shapeit_reference
+owner: sanbi-uwc

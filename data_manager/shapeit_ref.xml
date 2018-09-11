@@ -1,0 +1,30 @@
+<tool id="shapeit_reference_manager" name="SHAPEIT reference data path manager" tool_type="manage_data" version="0.0.1">
+    <command detect_errors="aggressive"><![CDATA[
+    python $__tool_directory__/shapeit_ref.py
+        '${key}'
+        '${description}'
+        '${path}'
+        '${prefix}'
+        '${output_file}'
+    ]]></command>>
+    <inputs>
+        <param name="key" type="text" label="Short key to identify this reference set (no spaces)" />
+        <param name="description" type="text" label="Description of the reference data" />
+        <param name="path" type="text" label="Filesystem path to directory containing this reference set" />
+        <param name="prefix" type="text" label="Filename prefix for files in this reference set" />
+    </inputs>
+    <outputs>
+        <data name="output_file" format="data_manager_json" />
+    </outputs>
+    <help><![CDATA[
+    This data manager updates the *shapeit_ref* table with information about locally-maintained reference data
+    used by the SHAPEIT_ haplotype estimation (i.e. phasing) package. An example for the 1000 Genomes
+    dataset is available here_.
+
+    .. _SHAPEIT: http://mathgen.stats.ox.ac.uk/genetics_software/shapeit/shapeit.html
+    .. _here: https://mathgen.stats.ox.ac.uk/impute/1000GP_Phase3.html
+    ]]></help>
+    <citations>
+        <citation type="doi">10.1038/nmeth.1785</citation>
+    </citations>
+</tool>
