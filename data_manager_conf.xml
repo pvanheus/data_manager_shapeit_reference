@@ -6,7 +6,8 @@
                 <column name="key" />
                 <column name="description" />
                 <column name="path" />
-                <column name="prefix" />
+                <column name="reference_prefix">
+                <column name="map_prefix" />
             </output>
         </data_table>
     </data_manager>    
