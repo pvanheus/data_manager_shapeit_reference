@@ -33,7 +33,7 @@ assert_prefix_exists.__annotations__ = {'prefix': str, 'path': str, 'prefix_type
 if __name__ == '__main__':
     parser = argparse.ArgumentParser(description='Generate a data manager output for SHAPEIT reference data')
     parser.add_argument('key', help='Short key to identify this reference set (no spaces)')
-    parser.add_argument('description', help='Description of reference set')
+    parser.add_argument('name', help='Description of reference set')
     parser.add_argument('path', help='Filesystem path to directory containing this reference set')
     parser.add_argument('reference_prefix', help='Filename prefix for the reference (.hap / .legend / .sample) files')
     parser.add_argument('map_prefix', help='Filename prefix for map files in this reference set')
@@ -46,13 +46,13 @@ if __name__ == '__main__':
     assert_prefix_exists(args.reference_prefix, args.path, 'reference')
     assert_prefix_exists(args.map_prefix, args.path, 'map')
 
-    for column in ('key', 'description', 'path', 'reference_prefix', 'map_prefix'):
+    for column in ('key', 'name', 'path', 'reference_prefix', 'map_prefix'):
         value = getattr(args, column)
         if '\t' in value:
             exit("TAB character found in {} argument".format(column))
 
     data_manager_dict = {}
-    data_table_entry = dict(value=args.key, description=args.description, path=args.path,
+    data_table_entry = dict(value=args.key, name=args.name, path=args.path,
                             reference_prefix=args.reference_prefix, map_prefix=args.map_prefix)
     _add_data_table_entry(data_manager_dict, 'shapeit_ref', data_table_entry)
 
