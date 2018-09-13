@@ -3,7 +3,7 @@
     <data_manager tool_file="data_manager/shapeit_ref.xml" id="data_manager_shapeit_reference">
         <data_table name="shapeit_ref">
             <output>
-                <column name="key" />
+                <column name="value" />
                 <column name="description" />
                 <column name="path" />
                 <column name="reference_prefix" />

@@ -1,6 +1,6 @@
 <tables>
     <table name="shapeit_ref" comment_char="#">
-        <columns>key, description, path, reference_prefix, map_prefix</columns>
+        <columns>value, description, path, reference_prefix, map_prefix</columns>
         <file path="tool-data/shapeit_ref.loc" />
     </table>
 </tables>

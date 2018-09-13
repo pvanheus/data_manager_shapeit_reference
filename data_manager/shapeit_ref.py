@@ -52,7 +52,7 @@ if __name__ == '__main__':
             exit("TAB character found in {} argument".format(column))
 
     data_manager_dict = {}
-    data_table_entry = dict(key=args.key, description=args.description, path=args.path,
+    data_table_entry = dict(value=args.key, description=args.description, path=args.path,
                             reference_prefix=args.reference_prefix, map_prefix=args.map_prefix)
     _add_data_table_entry(data_manager_dict, 'shapeit_ref', data_table_entry)
 
