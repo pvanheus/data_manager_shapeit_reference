@@ -1,7 +1,7 @@
 #This file lists the locations of SHAPEIT reference data connections
 #
-#<value>	<description>		<path>	<reference_file_prefix> <map_file_prefix>   <sample_file_prefix>
+#<value>	<description>	<path>	<reference_file_prefix>	<map_file_prefix>	<sample_file_prefix>
 #
 #For example
 #
-#1000G_Phase3	1000 Genomes project haplotypes		/path/to/shapeit_ref/1000G	1000GP_Phase3_chr	genetic_map_chr	1000GP_Phase3
+#1000G_Phase3	1000 Genomes project haplotypes	/path/to/shapeit_ref/1000G	1000GP_Phase3_chr	genetic_map_chr	1000GP_Phase3
