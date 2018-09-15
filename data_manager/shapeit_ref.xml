@@ -1,11 +1,12 @@
-<tool id="shapeit_reference_manager" name="SHAPEIT reference data path manager" tool_type="manage_data" version="0.0.5">
-    <command detect_errors="aggressive"><![CDATA[
+<tool id="shapeit_reference_manager" name="SHAPEIT reference data path manager" tool_type="manage_data" version="0.0.6">
+    <command detect_errors="exit_code"><![CDATA[
     python $__tool_directory__/shapeit_ref.py
         '${value}'
         '${name}'
         '${path}'
         '${reference_prefix}'
         '${map_prefix}'
+        '${sample_prefix}'
         '${output_file}'
     ]]></command>>
     <inputs>
@@ -14,6 +15,7 @@
         <param name="path" type="text" label="Filesystem path to directory containing this reference set" />
         <param name="reference_prefix" type="text" label="Filename prefix for the reference (.hap / .legend / .sample) files" />
         <param name="map_prefix" type="text" label="Filename prefix for map files in this reference set" />
+        <param name="sample_prefix" type="text" label="Filename prefix for sample file for this reference set">
     </inputs>
     <outputs>
         <data name="output_file" format="data_manager_json" />

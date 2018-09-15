@@ -8,6 +8,7 @@
                 <column name="path" />
                 <column name="reference_prefix" />
                 <column name="map_prefix" />
+                <column name="sample_prefix" />
             </output>
         </data_table>
     </data_manager>    
