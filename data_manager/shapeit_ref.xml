@@ -1,4 +1,4 @@
-<tool id="shapeit_reference_manager" name="SHAPEIT reference data path manager" tool_type="manage_data" version="0.0.6">
+<tool id="shapeit_reference_manager" name="SHAPEIT reference data path manager" tool_type="manage_data" version="0.0.8">
     <command detect_errors="exit_code"><![CDATA[
     python $__tool_directory__/shapeit_ref.py
         '${value}'
