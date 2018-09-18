@@ -5,5 +5,5 @@ long_description: |
   used by the SHAPEIT_ haplotype estimation
 remote_repository_url: https://github.com/pvanheus/data_manager_shapeit_reference
 type: unrestricted
-name: data_manager_shapeit_reference
+name: data_manager_shapeit2_reference  
 owner: sanbi-uwc

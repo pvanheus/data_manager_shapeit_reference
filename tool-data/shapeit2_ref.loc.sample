@@ -1,6 +1,6 @@
 #This file lists the locations of SHAPEIT reference data connections
 #
-#<value>	<description>	<path>	<reference_file_prefix>	<map_file_prefix>	<sample_file_prefix>
+#<value>	<name>	<path>	<reference_file_prefix>	<map_file_prefix>	<sample_file_prefix>
 #
 #For example
 #

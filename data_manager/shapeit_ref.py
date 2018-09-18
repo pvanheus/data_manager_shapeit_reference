@@ -57,6 +57,6 @@ if __name__ == '__main__':
     data_table_entry = dict(value=args.key, name=args.name, path=args.path,
                             reference_prefix=args.reference_prefix, map_prefix=args.map_prefix,
                             sample_prefix=args.sample_prefix)
-    _add_data_table_entry(data_manager_dict, 'shapeit_ref', data_table_entry)
+    _add_data_table_entry(data_manager_dict, 'shapeit2_ref', data_table_entry)
 
     args.output_file.write(json.dumps(data_manager_dict, sort_keys=True) + '\n')

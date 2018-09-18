@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <data_managers>    
-    <data_manager tool_file="data_manager/shapeit_ref.xml" id="data_manager_shapeit_reference">
-        <data_table name="shapeit_ref">
+    <data_manager tool_file="data_manager/shapeit_ref.xml" id="data_manager_shapeit2_reference">
+        <data_table name="shapeit2_ref">
             <output>
                 <column name="value" />
                 <column name="name" />
